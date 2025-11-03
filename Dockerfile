@@ -21,14 +21,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --timeout=1000 -r requirements.txt
 
 # Pre-download YOLO model to avoid download during runtime
-RUN python -c "
-try:
-    from ultralytics import YOLO
-    model = YOLO('yolov8n.pt')
-    print('✅ YOLO model downloaded successfully!')
-except Exception as e:
-    print(f'⚠️ YOLO download failed: {e}')
-"
+RUN python -c "from ultralytics import YOLO; model = YOLO('yolov8n.pt'); print('YOLO model downloaded successfully!')" || echo "YOLO download failed, will use fallback"
 
 # Copy application files
 COPY . .
