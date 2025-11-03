@@ -1,0 +1,47 @@
+# 🤖 Robot Vision Processing Pipeline
+
+A cloud-powered object detection system for robotics applications using Docker containers.
+
+## 🚀 Features
+- Real-time object detection using YOLOv5
+- Dockerized microservices architecture
+- Web-based interface for image upload
+- Cloud deployment ready
+- RESTful API for robot integration
+
+## 🏃‍♂️ Quick Start
+
+### Local Development
+```bash
+# Clone repository
+git clone <your-repo-url>
+cd robot-vision-pipeline
+
+# Run with Docker Compose
+docker-compose up --build
+
+# Access at http://localhost:5000
+```
+
+### Production Deploy (Railway)
+```bash
+# Connect to Railway
+railway login
+railway init
+railway up
+```
+
+## 🔌 API Endpoints
+- `GET /` - Web interface
+- `POST /detect` - Object detection API
+- `GET /health` - Health check
+
+## 🛠️ Tech Stack
+- **Backend**: Python Flask
+- **AI/ML**: YOLOv5, PyTorch
+- **Frontend**: HTML, Bootstrap, JavaScript  
+- **Containerization**: Docker
+- **Cloud**: Railway.app
+
+## 👨‍💻 Author
+Prathmesh2931 - Cloud DevOps Project

@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.card {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 15px;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+#resultImage {
+    border: 3px solid #28a745;
+    max-height: 400px;
+}
+
+.list-group-item {
+    border-left: 4px solid #007bff;
+}
